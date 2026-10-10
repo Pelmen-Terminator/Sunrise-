@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121a35">
+  <meta name="description" content="Рассвет — общественно-политическая организация за сотрудничество разных взглядов, свободу, социальную справедливость, науку и будущее человечества.">
+  <title>Рассвет — организация будущего</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--bg:#f6f4ef;--paper:#fffefa;--ink:#18213b;--muted:#626a7e;--line:#e4e1d8;--navy:#121a35;--blue:#5965a9;--gold:#f2bd58;--coral:#dc806d;--green:#3b8a76;--radius:22px;--sans:"DM Sans",system-ui,sans-serif;--display:"Manrope",system-ui,sans-serif}
+    [data-theme="dark"]{color-scheme:dark;--bg:#0d1227;--paper:#151d3a;--ink:#f5f3ed;--muted:#b4bad0;--line:#2b3455;--navy:#080d20}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 var(--sans)}a{color:inherit}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--navy) 94%,transparent);backdrop-filter:blur(14px);color:#fff}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font:800 20px var(--display);letter-spacing:-.04em}.mark{width:34px;height:34px;border-radius:50%;background:linear-gradient(145deg,#ffe5a0,#eaa33d);position:relative;display:inline-block;box-shadow:0 0 25px #f2bd5840}.mark:before{content:"";position:absolute;width:20px;height:10px;left:7px;top:8px;border-radius:20px 20px 0 0;background:var(--navy)}.mark:after{content:"";position:absolute;width:26px;height:8px;left:4px;bottom:5px;border-radius:50% 50% 0 0;background:#fff1c7}.navlinks{display:flex;align-items:center;gap:22px}.navlinks a{font-size:14px;text-decoration:none;color:#e0e3f1}.navlinks a:hover{color:var(--gold)}.nav-actions{display:flex;align-items:center;gap:10px}.theme{border:1px solid #ffffff40;color:#fff;background:transparent;border-radius:50%;width:38px;height:38px;cursor:pointer}.menu{display:none;border:1px solid #ffffff40;background:transparent;color:#fff;border-radius:10px;padding:8px 12px}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 30%,#555d9c 0,transparent 38%),linear-gradient(135deg,#121a35 5%,#292c5a 58%,#9b5c68 100%);color:#fff;padding:100px 0 90px}.hero:after{content:"";position:absolute;width:500px;height:500px;border-radius:50%;right:-90px;bottom:-350px;background:radial-gradient(circle,#ffe4a0 0,#f2bd58 42%,#df8d5c 70%,transparent 71%);opacity:.95}.hero-inner{position:relative;z-index:1;max-width:800px}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:#ffe0a0}.eyebrow:before{content:"";width:24px;height:2px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font:800 clamp(54px,10vw,106px)/.98 var(--display);letter-spacing:-.075em;margin:22px 0}.hero .subtitle{font-size:clamp(19px,2.5vw,24px);line-height:1.55;color:#e6e7f1;max-width:680px}.hero .desc{max-width:640px;color:#c8cbe0;margin:22px 0 32px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:1px solid transparent;border-radius:999px;padding:13px 21px;text-decoration:none;font-weight:700;cursor:pointer;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:#ffe7ad;color:#20233d}.btn.outline{border-color:#ffffff65;color:#fff;background:#ffffff0b}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:46px;color:#d2d5e8;font-size:13px}.hero-meta span:before{content:"✦";color:var(--gold);margin-right:8px}
+    section{padding:82px 0}.section-head{max-width:720px;margin-bottom:34px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:800;margin-bottom:12px}h2{font:800 clamp(31px,5vw,48px)/1.13 var(--display);letter-spacing:-.055em;margin-bottom:16px}.lead{font-size:18px;color:var(--muted);max-width:720px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:26px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);min-height:220px}.iconbox{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:#f6e7c9;color:#4a4261;font-size:22px;margin-bottom:22px}.card:nth-child(3n+2) .iconbox{background:#e4e8fa}.card:nth-child(3n) .iconbox{background:#dcefe7}.card h3{font:700 20px/1.3 var(--display);letter-spacing:-.03em;margin-bottom:9px}.card p{color:var(--muted);font-size:15px;margin-bottom:0}
+    .dark-section{background:var(--navy);color:#f6f4ef}.dark-section .kicker{color:var(--gold)}.dark-section .lead{color:#c0c5dc}.pillars{display:grid;grid-template-columns:1fr 1fr;gap:0 38px;margin-top:38px}.pillar{display:grid;grid-template-columns:50px 1fr;gap:16px;padding:25px 0;border-top:1px solid #ffffff24}.num{font:800 14px var(--display);color:var(--gold);padding-top:4px}.pillar h3{font:700 20px var(--display);margin-bottom:6px}.pillar p{color:#c0c5dc;font-size:15px;margin:0}
+    .manifesto{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}.manifesto-note{position:sticky;top:105px;border-radius:var(--radius);padding:30px;background:linear-gradient(145deg,#f7e8c9,#f0d5cc);color:#252743}.manifesto-note .big{font:800 34px/1.15 var(--display);letter-spacing:-.05em}.manifesto-note p{margin:18px 0 0;color:#57556c}.principles{display:grid;gap:20px}.principle{padding-bottom:20px;border-bottom:1px solid var(--line)}.principle h3{font:700 20px var(--display);margin-bottom:7px}.principle p{color:var(--muted);margin:0}
+    .roadmap{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.roadmap article{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:var(--paper)}.roadmap .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--green);background:color-mix(in srgb,var(--green) 12%,var(--paper));border-radius:30px;padding:5px 9px;margin-bottom:14px}.roadmap h3{font:700 21px var(--display);margin-bottom:8px}.roadmap p{color:var(--muted);font-size:15px;margin:0}
+    .join-section{background:linear-gradient(145deg,#f1e4c9,#f4e7e3 58%,#dfe8ed)}[data-theme="dark"] .join-section{background:linear-gradient(145deg,#222846,#29283f)}.joinbox{display:grid;grid-template-columns:1fr .9fr;gap:44px;align-items:center}.joinbox .lead{color:#515970}[data-theme="dark"] .joinbox .lead{color:var(--muted)}.join-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.join-actions .primary{background:var(--navy);color:white}.join-actions .secondary{border-color:#9a9daf;color:var(--ink);background:transparent}.contact-card{padding:25px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}.contact-card h3{font:700 20px var(--display)}.contact-card p{font-size:14px;color:var(--muted)}.contact-card code{display:block;overflow-wrap:anywhere;padding:12px;border-radius:10px;background:var(--bg);color:var(--ink);font-size:13px}
+    footer{background:#090e20;color:#c0c5dc;padding:30px 0;font-size:14px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer-brand{font:800 18px var(--display);color:#fff}.founder{color:#fff}.footer-note{font-size:12px;color:#8f96b4;margin-top:10px}.backtop{text-decoration:none;color:var(--gold)}
+    @media(max-width:850px){.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:14px 22px 22px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.cards{grid-template-columns:repeat(2,1fr)}.manifesto,.joinbox{grid-template-columns:1fr}.manifesto-note{position:static}.hero{padding:78px 0 85px}}
+    @media(max-width:600px){.wrap{width:min(100% - 30px,1120px)}section{padding:60px 0}.cards,.pillars,.roadmap{grid-template-columns:1fr}.card{min-height:0}.hero-meta{gap:10px;flex-direction:column}.hero:after{right:-250px}.footer-inner{align-items:flex-start;flex-direction:column}.nav{min-height:64px}.navlinks{top:64px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav wrap" aria-label="Главная навигация">
+      <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span>РАССВЕТ</a>
+      <div class="navlinks" id="navlinks">
+        <a href="#about">Об организации</a><a href="#values">Принципы</a><a href="#program">Приоритеты</a><a href="#future">Будущее</a><a href="#join">Участие</a>
+      </div>
+      <div class="nav-actions"><button class="theme" id="themeToggle" aria-label="Переключить тему" title="Переключить тему">◐</button><button class="menu" id="menuToggle" aria-expanded="false" aria-controls="navlinks">Меню</button></div>
+    </nav>
+  </div>
+  <header class="hero" id="top">
+    <div class="wrap hero-inner">
+      <span class="eyebrow">Общественно-политическая организация</span>
+      <h1>Рассвет</h1>
+      <p class="subtitle">Разные взгляды. Общая ответственность. Будущее, которое мы создаём вместе.</p>
+      <p class="desc">«Рассвет» — широкая площадка для людей демократического, центристского и умеренного политического спектра. Мы стремимся соединить свободу, социальную ответственность, культурное многообразие и научный прогресс.</p>
+      <div class="actions"><a class="btn primary" href="#about">Познакомиться с организацией <span aria-hidden="true">↗</span></a><a class="btn outline" href="#program">Наши приоритеты</a></div>
+      <div class="hero-meta"><span>Сотрудничество вместо раскола</span><span>Наука ради жизни</span><span>Единство в многообразии</span></div>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Кто мы</div><h2>Организация, объединяющая разные взгляды</h2><p class="lead">«Рассвет» задуман как общественно-политическая организация, которая объединяет людей вокруг общих целей, а не требует от них полного совпадения во всех вопросах.</p></div>
+        <div class="cards">
+          <article class="card"><div class="iconbox" aria-hidden="true">◎</div><h3>Широкая коалиция</h3><p>Центристы, социал-демократы, либералы, консерваторы, умеренные социалисты, технократы и сторонники других совместимых демократических направлений.</p></article>
+          <article class="card"><div class="iconbox" aria-hidden="true">⌘</div><h3>Общее дело</h3><p>Мы считаем важными содержательный диалог, поиск практических решений, уважение к аргументам и возможность мирно спорить.</p></article>
+          <article class="card"><div class="iconbox" aria-hidden="true">✦</div><h3>Взгляд за горизонт</h3><p>Ставим долгосрочное выживание и развитие человечества в один ряд с качеством жизни нынешних поколений.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="dark-section" id="values">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Основы</div><h2>Принципы «Рассвета»</h2><p class="lead">Это ориентиры для совместной работы. Они задают направление, оставляя пространство для дискуссии о конкретных мерах.</p></div>
+        <div class="pillars">
+          <article class="pillar"><div class="num">01</div><div><h3>Политический плюрализм</h3><p>Сосуществование разных взглядов, открытая дискуссия, мирная конкуренция идей и уважение к законным гражданским правам.</p></div></article>
+          <article class="pillar"><div class="num">02</div><div><h3>Свобода и ответственность</h3><p>Личная инициатива и свобода выбора должны сочетаться с равенством перед законом и ответственностью за последствия решений.</p></div></article>
+          <article class="pillar"><div class="num">03</div><div><h3>Социальная справедливость</h3><p>Достойные возможности для образования, здравоохранения, труда и участия в общественной жизни — независимо от происхождения.</p></div></article>
+          <article class="pillar"><div class="num">04</div><div><h3>Космополитизм и культурное многообразие</h3><p>Человечество — единое сообщество, но это не отменяет ценности наций, религий, языков, традиций и культур.</p></div></article>
+          <article class="pillar"><div class="num">05</div><div><h3>Научный подход</h3><p>Решения должны учитывать проверяемые данные, профессиональные знания, общественные последствия и возможность пересмотра ошибок.</p></div></article>
+          <article class="pillar"><div class="num">06</div><div><h3>Ответственное развитие</h3><p>Технологический прогресс должен улучшать жизнь, снижать риски для цивилизации и учитывать ограничения окружающей среды.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="program">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Направления работы</div><h2>Приоритеты организации</h2><p class="lead">Основные направления, вокруг которых могут формироваться инициативы, исследовательские проекты и общественные кампании.</p></div>
+        <div class="roadmap">
+          <article><span class="tag">Экономика</span><h3>Смешанная и конкурентная экономика</h3><p>Поддержка предпринимательства и честной конкуренции, развитие малого и среднего бизнеса, антимонопольные меры и прозрачное управление стратегическими ресурсами.</p></article>
+          <article><span class="tag">Общество</span><h3>Возможности и социальная защита</h3><p>Доступное образование и здравоохранение, защита трудовых прав, адресная поддержка нуждающихся и создание условий для социальной мобильности.</p></article>
+          <article><span class="tag">Управление</span><h3>Открытые и подотчётные институты</h3><p>Прозрачность государственных решений, противодействие коррупции, независимый контроль, участие граждан и равенство перед законом.</p></article>
+          <article><span class="tag">Экология</span><h3>Сохранение среды обитания</h3><p>Защита экосистем, развитие чистой энергетики, ресурсосбережение и внедрение технологий, уменьшающих ущерб природе.</p></article>
+          <article><span class="tag">Культура</span><h3>Единство без унификации</h3><p>Международное сотрудничество при сохранении национальной самобытности, языков, религиозных традиций и культурного наследия.</p></article>
+          <article><span class="tag">Технологии</span><h3>Разумная технократия</h3><p>Использование экспертных знаний и измеримых результатов при принятии решений — при сохранении общественного контроля и человеческого достоинства.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="join-section" id="future">
+      <div class="wrap">
+        <div class="manifesto">
+          <div><div class="kicker">Долгосрочная перспектива</div><h2>Будущее человечества — общий проект</h2><p class="lead">Научный прогресс важен не сам по себе, а потому, что он помогает человечеству жить безопаснее, лучше понимать Вселенную и готовиться к долгосрочным вызовам.</p></div>
+          <div class="principles">
+            <article class="principle"><h3>Космические технологии</h3><p>Развитие космонавтики, спутниковой инфраструктуры, исследований Луны и дальнего космоса, а также технологий, способных расширить возможности цивилизации.</p></article>
+            <article class="principle"><h3>Технологии для выживания</h3><p>Поддержка научных направлений, которые могут снизить глобальные риски: медицина, энергетика, климатические исследования, защита от астероидов и системы раннего предупреждения.</p></article>
+            <article class="principle"><h3>Экология и устойчивость</h3><p>Совмещение технологического развития с охраной природы, устойчивым использованием ресурсов и восстановлением повреждённых экосистем.</p></article>
+            <article class="principle"><h3>Международное сотрудничество</h3><p>Общие научные задачи требуют обмена знаниями и совместной работы поверх государственных границ — без необходимости стирать культурные различия.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="join">
+      <div class="wrap joinbox">
+        <div><div class="kicker">Участие</div><h2>Внести свой вклад</h2><p class="lead">Организация открыта для обсуждения идей, совместных проектов, исследований и общественных инициатив. Если вы развиваете сайт на GitHub, добавьте сюда ссылки на официальные каналы связи и репозиторий.</p><div class="join-actions"><a class="btn primary" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#top">Вернуться наверх ↑</a></div></div>
+        <aside class="contact-card"><h3>Как связаться</h3><p>Контакты пока не указаны. Чтобы посетители могли действительно написать организации, замените адрес репозитория или добавьте электронную почту и ссылки на официальные сообщества.</p><code>Сайт: GitHub Pages<br>Статус: информационная страница</code></aside>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner"><div><div class="footer-brand">РАССВЕТ</div><div>Общественно-политическая организация</div></div><div class="founder">Основатель: <strong>Zero</strong></div><a class="backtop" href="#top">К началу ↑</a></div>
+      <div class="footer-note">Материалы сайта описывают концепцию организации. Конкретные положения могут уточняться по мере развития проекта.</div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const menuToggle = document.getElementById('menuToggle');
+    const navlinks = document.getElementById('navlinks');
+    toggle.addEventListener('click', () => {
+      const dark = document.documentElement.dataset.theme !== 'dark';
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      toggle.textContent = dark ? '☼' : '◐';
+      toggle.setAttribute('aria-label', dark ? 'Включить светлую тему' : 'Включить тёмную тему');
+    });
+    menuToggle.addEventListener('click', () => {
+      const open = navlinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+    });
+    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navlinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
+</body>
+</html>
